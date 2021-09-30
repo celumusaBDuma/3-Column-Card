@@ -1,0 +1,99 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-top: 2rem;
+}
+
+/* Features
+------------------------------ */
+
+.features {
+    width: 100%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-heading,
+.card-body,
+.icon,
+.btn {
+    margin: 2rem 0;
+}
+
+.card {
+    color: #fff;
+    padding: 1rem 2rem;
+    flex: 1;
+}
+
+.icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.card-heading {
+    text-transform: uppercase;
+}
+
+.card-body {
+    font-size: 1.2rem;
+}
+
+.btn {
+    background: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.sedan {
+    background: #e28525;
+}
+
+.sedan .btn {
+    color: #e28525;
+}
+
+.suv {
+    background: #016972;
+}
+
+.suv .btn {
+    color: #016972;
+}
+
+.luxury {
+    background: #00403f;
+}
+
+.luxury .btn {
+    color: #00403f;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 70%;
+
+        height: 100vh;
+    }
+    .features {
+        flex-direction: row;
+    }
+}
